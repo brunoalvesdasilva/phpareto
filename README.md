@@ -58,6 +58,8 @@ echo "$contagem\n"; // 1
 ```
 
 ```php
+require './src/index.php';
+
 /** Pipe **/
 $inc = function($x) { return ++$x; };
 $dec = function($x) { return --$x; };
