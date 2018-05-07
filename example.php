@@ -40,3 +40,10 @@ echo $calc(10, 10); // $contagem=1 & $calc = 100
 echo $calc(10, 10); // $contagem=1 & $calc = 100
 echo $calc(10, 10); // $contagem=1 & $calc = 100
 echo "$contagem\n"; // 1
+
+/** Pipe **/
+$inc = function($x) { return ++$x; };
+$dec = function($x) { return --$x; };
+
+$pipe = pipe($inc, $inc, $inc, $inc, $dec);
+echo $pipe(0); // 3

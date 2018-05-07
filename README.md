@@ -57,5 +57,14 @@ echo $calc(10, 10); // $contagem=1 & $calc = 100
 echo "$contagem\n"; // 1
 ```
 
+```php
+/** Pipe **/
+$inc = function($x) { return ++$x; };
+$dec = function($x) { return --$x; };
+
+$pipe = pipe($inc, $inc, $inc, $inc, $dec);
+echo $pipe(0); // 3
+```
+
 ## Misc
 Se você quiser adicionar uma nova função ou reescrever uma função baseada no Pareto.js, abra uma issue e explique o motivo.
