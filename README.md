@@ -12,9 +12,9 @@ require './src/index.php';
 
 $sum = function($num1, $num2) { return $num1+$num2; };
 
-echo curry($sum, 2, 2);
-echo curry($sum, 2)(2);
-echo curry($sum)(2)(2);
+echo curry($sum, 2, 2); // 4
+echo curry($sum, 2)(2); // 4
+echo curry($sum)(2)(2); // 4
 ```
 
 ## Misc

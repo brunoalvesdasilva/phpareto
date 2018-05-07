@@ -16,11 +16,11 @@ $md5 = function($string) {
 
 $composer = composer($upper, $md5, $exclamair);
 
-echo $composer("Hello");
+echo $composer("Hello"); // eb61eead90e3b899c6bcbe27ac581660!!!
 
 /** Curry **/
 $sum = function($num1, $num2) { return $num1+$num2; };
 
-echo curry($sum, 2, 2);
-echo curry($sum, 2)(2);
-echo curry($sum)(2)(2);
+echo curry($sum, 2, 2); // 4
+echo curry($sum, 2)(2); // 4
+echo curry($sum)(2)(2); // 4
