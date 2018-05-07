@@ -1,11 +1,20 @@
 ### Functional utility library for php, basead in Pareto.js
 
-- Only 2 core functions
+- Only 4 core functions
 - Written in php
 - Encourages immutability
 
+## API
+
+* [curry](#curry)
+* [compose](#compose)
+* [memoize](#memoize)
+* [pipe](#pipe)
+
 
 ## Example
+
+### curry
 
 ```php
 require './src/index.php';
@@ -16,6 +25,8 @@ echo curry($sum, 2, 2); // 4
 echo curry($sum, 2)(2); // 4
 echo curry($sum)(2)(2); // 4
 ```
+
+### compose
 
 ```php
 require './src/index.php';
@@ -38,6 +49,8 @@ $composer = composer($upper, $md5, $exclamation);
 echo $composer("Hello"); // eb61eead90e3b899c6bcbe27ac581660!!!
 ```
 
+### memoize
+
 ```php
 require './src/index.php';
 
@@ -56,6 +69,8 @@ echo $calc(10, 10); // $contagem=1 & $calc = 100
 echo $calc(10, 10); // $contagem=1 & $calc = 100
 echo "$contagem\n"; // 1
 ```
+
+### pipe
 
 ```php
 require './src/index.php';
