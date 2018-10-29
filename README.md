@@ -44,9 +44,9 @@ $md5 = function($string) {
 	return md5($string);
 };
 
-$composer = composer($upper, $md5, $exclamation);
+$compose = compose($upper, $md5, $exclamation);
 
-echo $composer("Hello"); // eb61eead90e3b899c6bcbe27ac581660!!!
+echo $compose("Hello"); // eb61eead90e3b899c6bcbe27ac581660!!!
 ```
 
 ### memoize
