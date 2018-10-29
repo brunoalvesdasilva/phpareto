@@ -1,7 +1,7 @@
-### Functional utility library for php, basead in Pareto.js
+### Functional utility library for PHP, based in [Pareto.js](https://github.com/concretesolutions/pareto.js/)
 
 - Only 4 core functions
-- Written in php
+- Written in PHP
 - Encourages immutability
 
 ## API
